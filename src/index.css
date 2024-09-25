@@ -81,11 +81,11 @@ body {
   color: #D71A19;
 }
 
-.CTA {
+.CTA, .Login-Btn, .Signout-Btn {
   background-color: #D71A19;
 }
 
-.CTA:hover{
+.CTA:hover, .Login-Btn:hover, .Signout-Btn:hover{
   -webkit-animation:scale-down-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:scale-down-center .4s cubic-bezier(.25,.46,.45,.94) both;
 }
 
@@ -96,6 +96,9 @@ body {
   background-color: #FEFFF9;
 }
 
+.form input, .form textarea {
+  background-color: #FEFFF9;
+}
 
 /* Image overlay hover animation */
 .overlay {
@@ -237,6 +240,17 @@ body {
 
 @media only screen and (max-width: 750px) {
 
+  .navBar {
+    padding-left: 48px;
+    padding-right: 48px;
+    
+  }
+
+  .MenuIcon {
+    flex-grow: 1;
+    margin-left: 50px;
+  }
+
   .bannerWrapper, .serviceItems {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -293,6 +307,12 @@ body {
   .footer div p {
     text-align: center;
   }
+
+  #Contact {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
 
 }
 
